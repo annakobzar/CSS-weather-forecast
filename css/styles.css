@@ -1,0 +1,110 @@
+:root {
+  --font: “Lucida Sans Unicode”, “Lucida Grande”, sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  outline: none;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+body,
+html {
+  min-height: 100%;
+  width: 100%;
+}
+
+.clear::after,
+.clear::before {
+  content: " ";
+  display: table;
+}
+
+.clear::after {
+  clear: both;
+}
+
+/* Main Styles */
+body {
+  height: 100vh;
+  background-color: #3399cc;
+  border: 20px solid #2b81ac;
+  color: #fff;
+  font: 22px var(--font);
+}
+
+h1 {
+  font-weight: 700;
+  padding: 25px 0;
+}
+
+.cities {
+  border: 3px solid #fff;
+  transition: all 0.1s ease-in;
+}
+
+.city-item {
+  border: 3px solid #fff;
+  text-align: center;
+  padding: 10px 0;
+  line-height: 38px;
+}
+
+.city-item:nth-child(11n + 1) {
+  background-color: #3399cc;
+}
+
+.city-item:nth-child(11n + 2) {
+  background-color: #33cccc;
+}
+
+.city-item:nth-child(11n + 3) {
+  background-color: #996699;
+}
+
+.city-item:nth-child(11n + 4) {
+  background-color: #c24747;
+}
+
+.city-item:nth-child(11n + 5) {
+  background-color: #e2674a;
+}
+
+.city-item:nth-child(11n + 6) {
+  background-color: #ffcc66;
+}
+
+.city-item:nth-child(11n + 7) {
+  background-color: #99cc99;
+}
+
+.city-item:nth-child(11n + 8) {
+  background-color: #669999;
+}
+
+.city-item:nth-child(11n + 9) {
+  background-color: #cc6699;
+}
+
+.city-item:nth-child(11n + 10) {
+  background-color: #339966;
+}
+
+.city-item:nth-child(11n + 11) {
+  background-color: #666699;
+}
+
+/* .city-item:hover {
+  opacity: 0.5;
+} */
+
+p {
+  padding: 25px 0;
+}
