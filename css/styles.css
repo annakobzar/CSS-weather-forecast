@@ -46,11 +46,17 @@ h1 {
 }
 
 .cities {
-  /* border: 3px solid #fff; */
   /* сделать рамку белую */
   background-color: #fff;
   padding: 3px;
-  transition: all 0.1s ease-in;
+}
+
+.cities:hover .city-item {
+  opacity: 0.5;
+}
+
+.cities:hover .city-item:hover {
+  opacity: 1;
 }
 
 .city-item {
@@ -58,8 +64,9 @@ h1 {
   /* чтобы было белое при наведении */
   background-color: #fff;
   text-align: center;
-  padding: 10px 0;
+  padding: 20px 0;
   line-height: 38px;
+  transition: all 0.3s ease-in;
 }
 
 .city-item:nth-child(11n + 1) {
@@ -104,14 +111,6 @@ h1 {
 
 .city-item:nth-child(11n + 11) {
   background-color: #666699;
-}
-
-.cities:hover .city-item {
-  opacity: 0.5;
-}
-
-.cities:hover .city-item:hover {
-  opacity: 1;
 }
 
 p {
